@@ -24,3 +24,22 @@ document.querySelectorAll('a.remove').forEach(function (removeLink) {
 //     });
 //   });
 // });
+
+// SessionStorage에 저장된 'cartItem'을 가져오는 함수 생성
+async function getSessionStorage () {
+  try {
+    let cartData = sessionStorage.getItem('cartItem');
+    if (cartData ) {
+      cartData = JSON.parse(cart);
+    } else {
+      cartData = { items: [] };
+    }
+
+    const 
+
+
+
+  } catch (error) {
+		console.error(error);
+	}
+}

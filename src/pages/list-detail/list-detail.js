@@ -93,17 +93,33 @@ innerNumber.addEventListener('input', function () {
     }
 });
 
+// 장바구니에 담을 배열 생성
+const cartItems = [];
 cartAddButton.addEventListener('click', function () {
+    // 여기에 제품 아이디 추가 하셔야합니다.
     const cartItem = {
         productName: productName.innerHTML,
         productPrice: productPrice.innerHTML,
         quantity: innerNumber.value
     };
 
-    const jsonCartItem = JSON.stringify(cartItem);
-    console.log(jsonCartItem); // 브라우저 콘솔에 JSON 형태로 출력
-    return jsonCartItem; // 반환하거나, 다른 함수로 전달하여 사용
+    addToCart(cartItem);
 });
+
+function addToCart(item) {
+    // 이미 장바구니에 존재하는 제품인지 찾는다.
+    const existingItemIndex = cartItems.findIndex(i => i.id === item.id);
+
+    if (existingItemIndex > -1) {
+        // 이미 존재하는 제품일 경우, 수량을 더함.
+        cartItems[existingItemIndex].quantity = Number(cartItems[existingItemIndex].quantity) + Number(item.quantity);
+    } else {
+        // 새로운 제품일 경우, 장바구니에 추가.
+        cartItems.push(item);
+    }
+    // 장바구니 목록을 localStorage에 저장
+    sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
+}
 
 
 specificationsContainer.addEventListener('click', function () {
