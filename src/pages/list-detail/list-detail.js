@@ -104,6 +104,7 @@ cartAddButton.addEventListener('click', function () {
     };
 
     addToCart(cartItem);
+    window.location.href ='../shopping-cart/shopping-cart.html'
 });
 
 function addToCart(item) {

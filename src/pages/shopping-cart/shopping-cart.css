@@ -1,6 +1,4 @@
-@import "compass/css3";
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
-@import "compass/reset";
 * {
 	 box-sizing: border-box;    /* 패딩과 테두리가 요소의 크기에 포함되게 사이징됨 */
 }
