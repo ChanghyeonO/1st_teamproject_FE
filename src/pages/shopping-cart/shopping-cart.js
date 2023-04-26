@@ -48,31 +48,31 @@ async function getSessionStorage() {
 
 await getSessionStorage()
 
-// // removeAllBtn 클릭 시, 모든 sessionStorage의 데이터를 지우고
-// // sessionStorage를 다시 불러옴.
-// const removeAllBtn = document.querySelector('.removeAll');
-// // removeButtons 클릭 시, 모든 remove의 배열에 각 removeItemOnClick을 실행시키며,
-// // 해당 버튼의 가장 가까운(부모요소) item class를 찾아서 splice해 준 뒤 
-// // sessionStorage에 다시 저장 후 화면에서 items를 remove
-// const removeButtons = document.querySelectorAll('.remove');
+// removeAllBtn 클릭 시, 모든 sessionStorage의 데이터를 지우고
+// sessionStorage를 다시 불러옴.
+const removeAllBtn = document.querySelector('.removeAll');
+// removeButtons 클릭 시, 모든 remove의 배열에 각 removeItemOnClick을 실행시키며,
+// 해당 버튼의 가장 가까운(부모요소) item class를 찾아서 splice해 준 뒤 
+// sessionStorage에 다시 저장 후 화면에서 items를 remove
+const removeButtons = document.querySelectorAll('.remove');
 
-// removeAllBtn.addEventListener('click', removeAllItem);
+removeAllBtn.addEventListener('click', removeAllItem);
 
-// function removeAllItem() {
-//   sessionStorage.removeItem('cartItem');
-//   getSessionStorage()
-// }
+function removeAllItem() {
+  sessionStorage.removeItem('cartItem');
+  getSessionStorage()
+}
 
-// removeButtons.forEach(button => {
-//   button.addEventListener('click', () => {
-//     removeItem(button);
-//   });
-// });
+removeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    removeItem(button);
+  });
+});
 
-// function removeItem(button) {
-//   const itemIndex = button.closest('.items').dataset.index;
-//   const cartData = JSON.parse(sessionStorage.getItem('cartItem'));
-//   cartData.splice(itemIndex, 1);
-//   sessionStorage.setItem('cartItem', JSON.stringify(cartData));
-//   button.closest('.items').remove();
-// }
+function removeItem(button) {
+  const itemIndex = button.closest('.items').dataset.index;
+  const cartData = JSON.parse(sessionStorage.getItem('cartItem'));
+  cartData.splice(itemIndex, 1);
+  sessionStorage.setItem('cartItem', JSON.stringify(cartData));
+  button.closest('.items').remove();
+}
