@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>담아 - 로그인</title>
+  	<!-- css 파일 가져오기 -->
+	<link rel="stylesheet" href="../../assets/styles/global.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<!-- flacticon styles load all -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css' />
+  <!-- 자바스크립트 파일 -->
+  <script type="module" src="login.js" defer></script>
+</head>
+<body>
+  <header>
+		<!-- 네비바 template로 삽입 -->
+	</header>
+
+  <div class="container">
+    <div class="loginBox">
+      <p>로그인</p>
+      <div class="field">
+        <label class="label" for="idInput"></label>
+        <input class="input" id="idInput" type="text" placeholder="아이디" autocomplete="on" required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="passwordInput"></label>
+        <input class="input" id="passwordInput" type="password" placeholder="비밀번호" autocomplete="on" required>
+      </div>
+      
+      <div>
+        <button class="button is-dark" id="loginButton">로그인</button>
+      </div>
+
+      <label class="label" for="register"></label>
+      <div id = "register">
+        <a href="../register/register.html">회원가입</a>
+      </div>
+    </div>
+  </div> 
+
+  <footer class="footer">
+		<!-- footer바 template로 삽입 -->
+	</footer>
+</body>
+</html>

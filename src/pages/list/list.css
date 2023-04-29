@@ -1,0 +1,330 @@
+@import "../../assets/styles/reset.css";
+
+/* main */
+
+.section-title {
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #919090;
+}
+
+.section-title h1 {
+	font-size: 20px;
+	color: #555;
+	padding-top: 3%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.section-menu {
+	display: flex;
+	font-size: 15px;
+	color: #555;
+	margin: 25px 10%;
+}
+
+.item-count {
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.item-filter-box {
+	display: flex;
+	margin-left: 30px;
+}
+
+.item-filter-box p {
+	margin-left: 30px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.item-filter-box p.menu-title {
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+.item-filter-box .dropdown-menu {
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.item-filter-box .dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.item-filter-box .dropdown-menu p {
+	padding: 10px;
+}
+
+.item-sorting-title {
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.item-sorting-title .sorting-menu-title {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.item-sorting-title .fa-chevron-down {
+	margin-left: 5px;
+}
+
+.item-area {
+	width: 80%;
+	height: 1200px;
+	/* background-color: #555; */
+	margin-top: 5%;
+	margin-left: 15%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-content: flex-start;
+	align-items: center;
+}
+
+.item-box {
+	width: 15%;
+	height: 260px;
+	padding: 25px;
+	margin-left: 30px;
+	margin-top: 20px;
+	/* background-color: aqua; */
+	/* border: 1px solid #000; */
+	text-align: left;
+	text-decoration: none;
+	color: #000;
+}
+
+.item-image {
+	width: 100%;
+	height: 80%;
+	font-size: 13px;
+}
+
+.item-name {
+	font-size: 15px;
+	height: 40px;
+}
+
+.item-price {
+	/* position: absolute; */
+	font-size: 12px;
+	margin-top: 30px;
+	display: flex;
+}
+
+.pagenation {
+	width: 100%;
+	height: 110px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+
+.pagenation-numbers {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.pagenation-numbers li {
+	display: block;
+	margin: 45px 20px;
+}
+
+.pagenation-numbers li a {
+	text-decoration: none;
+	border-radius: 50px;
+	color: #000;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 44px; /* 중앙 정렬을 위한 속성 */
+}
+
+.pagenation-numbers li a.active {
+	color: #000;
+	background-color: #ccc;
+}
+
+/* item-color-menu */
+
+.item-color-menu {
+	display: flex;
+	position: absolute;
+	text-align: left;
+	flex-wrap: wrap;
+	width: 220px;
+	height: 240px;
+	left: 320px;
+	margin-top: 30px;
+	padding: 20px 20px 10px 20px;
+	background-color: #fff;
+	font-size: 20px;
+	border: 1px solid #000;
+	box-shadow: 3px 3px 15px #666;
+	display: none;
+}
+
+.item-color-menu li {
+	width: 50%;
+	height: 20px;
+	cursor: pointer;
+	color: #ccc;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+.item-color-menu li input {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	outline: none;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.item-color-menu li input:checked {
+	border: 1px solid black;
+	padding: 1px;
+}
+
+.color-clear input {
+	background-color: none;
+}
+.color-white input {
+	background-color: #fff;
+}
+.color-black input {
+	background-color: black;
+}
+.color-gray input {
+	background-color: gray;
+}
+.color-brown input {
+	background-color: brown;
+}
+.color-beige input {
+	background-color: beige;
+}
+.color-green input {
+	background-color: green;
+}
+.color-blue input {
+	background-color: blue;
+}
+.color-yellow input {
+	background-color: yellow;
+}
+.color-pink input {
+	background-color: pink;
+}
+.color-red input {
+	background-color: red;
+}
+.color-orange input {
+	background-color: orange;
+}
+
+.item-color-menu-button {
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+/* item-stock-menu */
+
+.item-stock-menu {
+	display: none;
+	position: absolute;
+	width: 220px;
+	height: 150px;
+	margin-top: 30px;
+	left: 410px;
+	padding: 20px 20px 10px 20px;
+	border: 1px solid #000;
+	box-shadow: 3px 3px 15px #666;
+	background-color: #fff;
+	list-style: none;
+}
+
+.stock-check {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.stock-check input {
+	/* appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none; */
+	width: 15px;
+	height: 15px;
+	border: 1px solid #ccc;
+	outline: none;
+	cursor: pointer;
+}
+
+.stock-check-button {
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+/* item-sorting-menu */
+
+.item-sorting-menu {
+	display: none;
+	position: absolute;
+	width: 220px;
+	height: 150px;
+	margin-top: 30px;
+	right: 200px;
+	border: 1px solid #000;
+	padding: 20px 20px 10px 20px;
+	box-shadow: 3px 3px 15px #666;
+	background-color: #fff;
+}
+
+.sorting-low-price-button {
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 30px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 15px;
+	border: none;
+	background-color: #ccc;
+}
+
+.sorting-low-price-button:hover {
+	background-color: #565656;
+	transition: 0.5s;
+}
+
+.sorting-high-price-button {
+	display: block;
+	width: 100%;
+	height: 40px;
+	cursor: pointer;
+	color: #fff;
+
+	font-size: 15px;
+	border: none;
+	background-color: #ccc;
+}
+
+.sorting-high-price-button:hover {
+	background-color: #565656;
+	transition: 0.5s;
+}

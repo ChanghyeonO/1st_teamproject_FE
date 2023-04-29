@@ -1,0 +1,29 @@
+[ {
+	"orderNumber": 12345,
+	"products": [
+		{
+			"productId": "abc123",
+			"price": 10000,
+			"count": 2,
+			"state": "배송중"
+		},
+		{
+			"productId": "def456",
+			"price": 13000,
+			"count": 1,
+			"state": "배송중"
+		},
+		{
+			"productId": "abc456",
+			"price": 6000,
+			"count": 2,
+			"state": "배송중"
+		},
+		{
+			"productId": "def789",
+			"price": 200000,
+			"count": 1,
+			"state": "배송중"
+		}]
+	}
+]

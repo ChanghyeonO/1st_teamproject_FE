@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>담아 - 회원 가입</title>
+  <!-- css 파일 가져오기 -->
+  <link rel="stylesheet" href="../../assets/styles/global.css">
+  <link rel="stylesheet" href="register.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<!-- flacticon styles load all -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css' />
+
+  <!-- 자바스크립트 파일 가져오기 -->
+  <script type ="module" src="register.js" defer></script>
+</head>
+
+<body>
+  <header>
+		<!-- 네비바 template로 삽입 -->
+	</header>
+
+  <div class="container">
+    <div class="registerBox">
+      <div class="field">
+        <label class="label" for="userNameInput">아이디* <br></label>
+        <input class="inputbox" id="userNameInput" type="text" autocomplete="on">
+        <p class = "errorType" id="idError">ID는 3~15자로 해주세요</p>
+      </div>
+      <div class="field">
+        <label class="label" for="passwordInput">비밀번호* <br></label>
+        <input class="inputbox" id="passwordInput" type="password" placeholder="*******">
+        <p class = "errorType" id="pwError">비밀번호는 영문 + 숫자 조합으로 12~30자로 해주세요.</p>
+      </div>
+      <div class="field">
+        <label class="label" for="passwordConfirmInput">비밀번호 확인* <br></label>
+        <input class="inputbox" id="passwordConfirmInput" type="password" placeholder="*******">
+        <p class = "errorType" id="pwcError">비밀번호가 일치하지 않습니다.</p>
+
+      </div>
+      <div class="field">
+        <label class="label" for="emailInput">이메일* <br></label>
+        <input class="inputbox" id="emailInput" type="email" placeholder="abc@def.com" autocomplete="on">
+        <p class = "errorType" id="emError">이메일 형식이 일치하지 않습니다.</p>
+        
+      </div>
+      <div class="field">
+        <label class="label" for="phoneNumberInput">핸드폰 번호* <br></label>
+        <input class="inputbox" id="phoneNumberInput" type="tel" placeholder="010-1234-5678">
+        <p class = "errorType" id="phError">핸드폰 번호 형식을 확인해주세요.</p>
+      </div>
+      <div class="field">
+        <label class="label" for="addressBasicInput">주소* <br></label>
+        <input class="inputbox" id="addressBasicInput" type="text">
+        <p class = "errorType" id="adError">주소를 입력해 주세요.</p>
+      </div>
+      <div class="control">
+        <button class="registerButton" id="registerButton">회원가입</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+		<!-- footer바 template로 삽입 -->
+	</footer>
+</body>
+</html>

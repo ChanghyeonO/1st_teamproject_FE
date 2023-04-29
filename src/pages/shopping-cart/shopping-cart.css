@@ -1,0 +1,370 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+* {
+	 box-sizing: border-box;    /* 패딩과 테두리가 요소의 크기에 포함되게 사이징됨 */
+}
+body {
+    color: #333;
+    -webkit-font-smoothing: antialiased;    /* 웹킷 기반 브라우저에서 폰트를 부드럽게 렌더링 */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+.wrap {
+    width: 75%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5% 0;
+    margin-bottom: 5em;
+}
+.projTitle {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-weight: bold; */
+    text-align: center;
+    font-size: 2em;
+    padding: 1em 0;
+    border-bottom: 1px solid #dadada;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.projTitle span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: lowercase;
+    color: #777;
+}
+
+
+.heading {
+    /* padding: 1em, 0; */
+    padding-top: 0;
+    margin-top: 0.7em;
+    border-bottom: 1px solid #d0d0d0;
+}
+.heading cf {
+    text-align: center;
+}
+.heading h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.heading a.continue:link, .heading a.continue:visited,
+.heading a.removeall:link, .heading a.removeall:visited{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.015em;
+    font-size: 1.0em;
+    padding: 1.2em;
+    color: #181818;
+    background: #e9e7e7;
+    font-weight: bold;
+    border-radius: 7px;
+    float: right;
+    text-align: right;
+    margin-right: 50px;
+    /* 아래는 다른 각각의 브라우저에서 애니메이션 효과 지정 */
+    transition: all 0.25s linear;
+}
+.heading a.continue:after, .heading a.removeall:after {
+    content: "\276f";   /* 설정 대상(가상 요소에 삽입되는 문자)은 >(;유니코드 276f) */
+    padding: 0.5em;
+    position: relative;
+    right: 0;
+    transition: all 0.15s linear;
+}
+.heading a.continue:hover, .heading a.continue:focus, .heading a.continue:active,
+.heading a.removeall:hover, .heading a.removeall:focus, .heading a.removeall:active {
+    background: #f8c3cd86;
+}
+.heading a.continue:hover:after, .heading a.continue:focus:after, .heading a.continue:active:after,
+.heading a.removeall:hover:after, .heading a.removeall:focus:after, .heading a.removeall:active:after {
+    right: -10px;
+}
+
+
+/* .tableHead {
+    display: table;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.75em;
+}
+.tableHead li {
+    display: table-cell;
+    padding: 1em 0;
+    text-align: center;
+}
+.tableHead li.prodHeader {
+    text-align: left;
+} */
+
+
+/* 장바구니 상품 구매 정보 */
+.cart {
+    padding: 1em 0;
+}
+.cart .items {
+    display: block;
+    width: 100%;
+    position: relative;
+    /* vertical-align: middle; */
+    padding: 1.5em;
+    border-bottom: 1px solid #fafafa;
+}
+.cart .items.even {
+    background: #fafafa;
+}
+.cart .items .infoWrap {
+    display: table;
+    table-layout: fixed;
+    width: 150%;
+}
+.cart .items .cartSection {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Gothic A1', sans-serif;
+}
+.cart .items .cartSection .itemNumber {
+    font-size: 0.75em;
+    color: #777;
+    margin-bottom: 0.5em;
+}
+.cart .items .cartSection h3 {
+    font-size: 1em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+.cart .items .cartSection p {
+    display: inline-block;
+    font-size: 0.85em;
+    color: #777;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cart .items .cartSection p .quantity {
+    font-weight: bold;
+    color: #333;
+}
+.cart .items .cartSection p.stockStatus {
+    color: #4c7fdf;
+    font-weight: bold;
+    padding: 0.5em 0 0 1em;
+    text-transform: uppercase;
+}
+.cart .items .cartSection p.stockStatus.out {
+    color: #f68179;
+}
+.cart .items .cartSection .itemImg {
+    width: 4em;
+    float: left;
+}
+.cart .items .cartSection.qtyWrap, .cart .items .cartSection.prodTotal {
+    /* position: absolute; */
+    width: 25%;
+    text-align: center;
+    margin: 15px 30px 15px 30px;
+    font-family: 'Gothic A1', sans-serif;;
+    font-weight: 250;
+    font-size: 1.25em;
+}
+.cart .items .cartSection input.qty {
+    width: 2em;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.25em;
+    margin: 1em 0.5em 0 0;
+}
+.cart .items .cartSection .itemImg {
+    width: 8em;
+    display: inline;
+    padding-right: 1em;
+}
+
+
+/* 상품 qty추가 하는 버튼 */
+.count-container {
+	display: flex;
+	/* width: 100%; */
+	height: 20px;
+    margin-bottom: 20px;
+	/* align-items: center; */
+}
+.count-container p {
+	font-size: 5px;
+}
+.count-button {
+	display: flex;
+    width: 53px;
+	height: 20px;
+	margin-top: 20px;
+	/* border: 1px solid #ccc; */
+}
+.count-button .minus-button i,
+.count-button .plus-button i {
+	/* border: none; */
+    display: inline-block;
+    height: 15px;
+	width: 15px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.count-button input {
+	border: none;
+	width: 22px;
+    height: 19px;
+	font-size: 15px;
+	color: #2a2a2a;
+	text-align: center;
+}
+
+
+
+
+/* 장바구니 상품 없에기 버튼 */
+a.remove {
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    background: #e0e0e0;
+    padding: 0.4em;
+    font-size: 0.75em;
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    line-height: 0.85;
+    width: 1.4em;
+    height: 1.4em;
+    transition: all 0.25s linear;
+}
+a.remove:hover {
+    background: rgb(252, 111, 111);
+}
+
+/* 구매하기 버튼 */
+.btn:link, .btn:visited {
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.015em;
+    font-size: 1em;
+    padding: 1em 3em;
+    color: #2c2c2c;
+    background: #e6e7e7;
+    font-weight: bold;
+    border-radius: 7px;
+    float: right;
+    text-align: right;
+    transition: all 0.25s linear;
+}
+.btn:after {
+    content: "\276f";
+    padding: 0.5em;
+    position: relative;
+    right: 0;
+    transition: all 0.15s linear;
+}
+.btn:hover, .btn:focus, .btn:active {
+    background: #f8c3cd86;
+}
+.btn:hover:after, .btn:focus:after, .btn:active:after {
+    right: -10px;
+}
+
+
+/* 주문금액과 주문하기버튼 */
+.subtotal {
+    margin-right: 4%;
+    float: right;
+    width: 35%;
+}
+.subtotal li {  /* 글머리 기호 제거 */
+    list-style-type: none;
+}
+.subtotal .totalRow {
+    padding: 0.5em;
+    text-align: right;
+}
+.subtotal .totalRow.final {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.subtotal .totalRow span {
+    display: inline-block;
+    padding: 0 0 0 1em;
+    text-align: right;
+}
+.subtotal .totalRow .label {
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: #777;
+}
+.subtotal .totalRow .value {
+    letter-spacing: -0.025em;
+    width: 60%;
+}
+
+
+/* 화면의 반응형 디자인 스타일을 정의 */
+@media only screen and (max-width: 39.375em) {
+    /* 전체 clearfix 박스 설정 */
+    .wrap {
+        width: 98%;
+        padding: 2% 0;
+	}
+    .projTitle {
+        font-size: 1.5em;
+        padding: 10% 5%;
+	}
+    .heading {
+        padding: 1em;
+        font-size: 90%;
+	}
+    .cart .items .cartSection {
+        width: 90%;
+        display: block;
+        float: left;
+	}
+    .cart .items .cartSection.qtyWrap {
+        width: 10%;
+        text-align: center;
+        padding: 0.5em 0;
+        float: right;
+	}
+    .cart .items .cartSection.qtyWrap:before {
+        content: "QTY";     /* quantity */
+        display: block;
+        font-family: 'Noto Sans KR', sans-serif;
+        padding: 0.25em;
+        font-size: 0.75em;
+	}
+    .cart .items .cartSection.prodTotal, .cart .items .cartSection.removeWrap {
+        display: none;
+        width: 10%;
+        position: absolute;
+        text-align: center;
+	}
+    .cart .items .cartSection .itemImg {
+        width: 25%;
+	}
+    
+    a.btn.order {
+        width: 100%;
+        text-align: center;
+	}
+}

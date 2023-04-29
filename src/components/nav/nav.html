@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DAM-AH</title>
+  <link rel="stylesheet" href="./nav.css" />
+  <link rel="stylesheet" href="../../assets/styles/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+  <!-- uicons-regular-rounded CSS 라이브러리(다양한 아이콘) -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <script src="./nav.js" type="module" defer></script>
+</head>
+
+<body>
+  <!-- nav bar 관련 -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="../../assets/img/DAMAH-logo.PNG" alt="담아" style="width: 100px; height: 60px" />
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <li class="navbar-item navbar-item--arrow" href="#">
+          PRODUCT
+          <div class="dropdown-container">
+            <ul>
+              <li>TEA-WARE</li>
+              <li>TUMBLER & BOTTLE</li>
+              <li>MUG & CUP</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="navbar-item" href="#">ABOUT</li>
+        <li class="navbar-item" href="#">LOCATION</li>
+        <li class="navbar-item" href="#">FOR BUSINESS</li>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-icon">
+          <div class="icon-buttons">
+            <span class="icon-button" id="questions">
+              <i class="fi fi-rr-envelope"></i>
+            </span>
+            <span class="icon-button" id="login">
+              <i class="fi fi-rr-user"></i>
+            </span>
+            <span class="icon-button" id="cart">
+              <i class="fi fi-rr-shopping-cart"></i>
+            </span>
+            <span class="icon-button" id="logout">
+              <i class="fi fi-rr-exit"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>

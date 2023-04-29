@@ -1,0 +1,98 @@
+[
+    {
+        "error": null,
+        "data": [
+            {
+                "id": "644541e576a3134955399e00",
+                "category": "머그 & 컵",
+                "pageLink": "https://kinto.kr/shop/item.php?it_id=8433",
+                "imgSrc": "../mug-img/mug1.jpg",
+                "name": "킨토 캐스트 에스프레소컵 90ml",
+                "price": 7400,
+                "count": 50,
+                "createdAt": "2023-04-19T04:36:25.410Z",
+                "updatedAt": "2023-04-19T04:36:25.410Z"
+            }
+        ]
+    },
+    {
+        "error": null,
+        "data": [
+            {
+                "id": "644541e576a3134955399e00",
+                "category": "머그 & 컵",
+                "pageLink": "https://kinto.kr/shop/item.php?it_id=8433",
+                "imgSrc": "../mug-img/mug2.jpg",
+                "name": "킨토 캐스트 커피컵 220ml",
+                "price": 9900,
+                "count": 50,
+                "createdAt": "2023-04-19T04:36:25.410Z",
+                "updatedAt": "2023-04-19T04:36:25.410Z"
+            }
+        ]
+    },
+    {
+        "error": null,
+        "data": [
+            {
+                "id": "644541e576a3134955399e00",
+                "category": "머그 & 컵",
+                "pageLink": "https://kinto.kr/shop/item.php?it_id=8433",
+                "imgSrc": "../mug-img/mug3.jpg",
+                "name": "킨토 캐스트 티컵 220ml",
+                "price": 12000,
+                "count": 50,
+                "createdAt": "2023-04-19T04:36:25.410Z",
+                "updatedAt": "2023-04-19T04:36:25.410Z"
+            }
+        ]
+    },
+    {
+        "error": null,
+        "data": [
+            {
+                "id": "644541e576a3134955399e00",
+                "category": "TEA",
+                "pageLink": "https://kinto.kr/shop/item.php?it_id=8433",
+                "imgSrc": "../mug-img/mug4.jpg",
+                "name": "킨토 캐스트 밀크머그 310ml",
+                "price": 12000,
+                "count": 50,
+                "createdAt": "2023-04-19T04:36:25.410Z",
+                "updatedAt": "2023-04-19T04:36:25.410Z"
+            }
+        ]
+    },
+    {
+        "error": null,
+        "data": [
+            {
+                "id": "644541e576a3134955399e00",
+                "category": "머그 & 컵",
+                "pageLink": "https://kinto.kr/shop/item.php?it_id=8433",
+                "imgSrc": "../mug-img/mug5.jpg",
+                "name": "킨토 캐스트 스프컵 420ml",
+                "price": 16000,
+                "count": 50,
+                "createdAt": "2023-04-19T04:36:25.410Z",
+                "updatedAt": "2023-04-19T04:36:25.410Z"
+            }
+        ]
+    },
+    {
+        "error": null,
+        "data": [
+            {
+                "id": "644541e576a3134955399e00",
+                "category": "머그 & 컵",
+                "pageLink": "https://kinto.kr/shop/item.php?it_id=8433",
+                "imgSrc": "../mug-img/mug6.jpg",
+                "name": "킨토 캐스트 까페라떼 머그 430ml",
+                "price": 14000,
+                "count": 50,
+                "createdAt": "2023-04-19T04:36:25.410Z",
+                "updatedAt": "2023-04-19T04:36:25.410Z"
+            }
+        ]
+    }
+]

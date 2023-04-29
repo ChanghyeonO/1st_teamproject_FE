@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./list-detail.css">
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <script type="module" defer src="./list-detail.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <script src="https://kit.fontawesome.com/e455f7c469.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="modal-box">
+        <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+        <a href="../main-page/home-page.html">
+            <button class="move-main-modal">메인페이지로 이동</button>
+        </a>
+        <p class="explanation-modal">
+        </p>
+        <a href="../shopping-cart/shopping-cart.html">
+            <button class="move-cart-modal">장바구니로 이동</button>
+        </a>
+    </div>
+    <div class="main-content-box">
+        <div class="static-content left-content">
+        </div>
+
+        <div class="middle-content">
+            <div class="content-product-detail">
+                <h4>PRODUCT-DETAIL</h4>
+                <div class="content-middle-data">
+                </div>
+            </div>
+        </div>
+
+        <div class="static-content right-content">
+            <div class="top-content">
+                <div class="product-name"></div>
+                <div class="product-price"></div>
+            </div>
+
+            <div class="count-container">
+                <p>수량</p>
+                <div class="count-button">
+                    <button class="minus-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" value="1" class="inner-number"></input>
+                    <button class="plus-button"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+
+            <p class="count-hint">수량을 확인해주세요.</p>
+
+            <div class="cart-container">
+                <button class="cart-add-button">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    장바구니
+                </button>
+
+                <a href="../shopping-cart/shopping-cart.html">
+                    <button class="move-cartpage-button">
+                        장바구니 이동
+                    </button>
+                </a>
+
+            </div>
+
+
+            <div class="specifications-container">
+                <h4>SPECIFICATIONS</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+            <div class="specifications-contents">
+                <p class="specifications-text">
+                </p>
+            </div>
+
+
+            <div class="handling-precautions-container">
+                <h4>HANDLING PRECAUTIONS</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+            <div class="handling-precautions-contents">
+                <p class="handling-precautions-text">
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

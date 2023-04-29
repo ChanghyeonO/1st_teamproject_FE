@@ -1,0 +1,137 @@
+/*--slider --*/
+.slider-container {
+  margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  height: 700px;
+}
+.slider {
+  display: flex;
+  width: 300%;
+  height: 100%;
+}
+.slider img {
+  width: 33.33%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider img:hover {
+  opacity: 0.85;
+  transition: opacity 1.5s ease-out;
+}
+
+/* 도트 */
+.dots-container {
+  position: absolute;
+  top: 50%;
+  bottom: 5%;
+  right: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+}
+.active {
+  background-color: #555;
+}
+
+
+/* 갤러리 */
+.shell {
+  margin-left: 15px;
+  padding-left: 15px;
+}
+.gallery-title {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+.gallery-template {
+  margin: 20px 100px 100px 200px;
+}
+.gallery-wrapper {
+  padding-bottom: 40px !important;
+  grid-template-columns: calc(33% - 4px) calc(33% - 4px) calc(33% - 4px);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.gallery-box {
+  width: calc(30% - 5px);
+  margin-right: 5px;
+  margin-bottom: 5px;
+  float: left;
+  display: grid;
+}
+.gallery-box.wider {
+  width: calc(60% - 5px);
+  margin-right: 0;
+  border: 0.1px;
+  border-color: rgb(171, 171, 171);
+}
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0.1px;
+  border-color: rgb(171, 171, 171);
+}
+.wider-gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.gallery-box:nth-of-type(2) {
+  margin-right: 0;
+  margin-left: 4px;
+}
+.gallery-box:nth-of-type(n+4) {
+  margin-top: 4px;
+}
+
+
+/* 비디오 */
+.container.is-fullhd {
+  position: relative;
+}
+
+.container.is-widescreen {
+  position: relative;
+  left: 0;
+  right: 0;
+  max-width: 1920px;
+}
+
+.video-container-text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 760%);
+  text-align: center;
+  color: white;
+}
+
+.video-container-text {
+  color: #ecebeb;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 3.8px;
+  line-height: 56px;
+  font-family: 'Noto Sans KR', serif;
+}
+.video-container-link {
+  color: #CCCCCC;
+}

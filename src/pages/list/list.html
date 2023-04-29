@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+    <script type="module" defer src="list.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <script src="https://kit.fontawesome.com/e455f7c469.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="section-title">
+            <h1 class="main-title"></h1>
+        </div>
+
+        <div class="section-menu">
+            <div class="item-count-box">
+                <p><span class="item-count"></span>ITEMS</p>
+            </div>
+
+            <div class="item-filter-box">
+                <p class="color-menu-title">
+                    색상<i class="fa-solid fa-chevron-down"></i>
+                </p>
+                <p class="stock-menu-title">
+                    재고 <i class="fa-solid fa-chevron-down"></i>
+                </p>
+                <p class="price-menu-title">
+                    가격 <i class="fa-solid fa-chevron-down"></i>
+                </p>
+            </div>
+
+            <div class="item-sorting-title">
+                <p class="sorting-menu-title">정렬순 <i class="fa-solid fa-chevron-down"></i></p>
+            </div>
+
+            <ul class="item-color-menu">
+
+                <li class="color-clear">
+                    <input type="checkbox">
+                    클리어
+                </li>
+                <li class="color-white">
+                    <input type="checkbox">
+                    화이트
+                </li>
+
+                <li class="color-black">
+                    <input type="checkbox">
+                    블랙
+                </li>
+                <li class="color-gray">
+                    <input type="checkbox">
+                    그레이
+                </li>
+
+                <li class="color-brown">
+                    <input type="checkbox">
+                    브라운
+                </li>
+                <li class="color-beige">
+                    <input type="checkbox">
+                    베이지
+                </li>
+
+                <li class="color-green">
+                    <input type="checkbox">
+                    그린
+                </li>
+                <li class="color-blue">
+                    <input type="checkbox">
+                    블루
+                </li>
+
+                <li class="color-yellow">
+                    <input type="checkbox">
+                    옐로우
+                </li>
+                <li class="color-pink">
+                    <input type="checkbox">
+                    핑크
+                </li>
+
+                <li class=" color-red">
+                    <input type="checkbox">
+                    레드
+                </li>
+                <li class="color-orange">
+                    <input type="checkbox">
+                    오렌지
+                </li>
+
+
+                <button class="item-color-menu-button">확인</button>
+            </ul>
+
+            <ul class="item-stock-menu">
+                <li class="stock-check">
+                    <input type="checkbox">
+                    재고있음
+                </li>
+
+                <button class="stock-check-button">확인</button>
+            </ul>
+
+            <!-- <ul class="item-price-menu">
+                <li>
+                    <a href="#">커피웨어</a>
+                </li>
+                <li>
+                    <a href="#">머그</a>
+                </li>
+                <li>
+                    <a href="#">텀블러</a>
+                </li>
+            </ul> -->
+
+            <div class="item-sorting-menu">
+                <button class="sorting-low-price-button">
+                    낮은가격순
+                </button>
+                <button class="sorting-high-price-button">
+                    높은가격순
+                </button>
+            </div>
+
+        </div>
+
+        <div class="item-area">
+        </div>
+
+        <div class="pagenation">
+            <ol class="pagenation-numbers">
+
+            </ol>
+        </div>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

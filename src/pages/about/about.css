@@ -1,0 +1,51 @@
+.header-contents1,
+.header-contents2,
+.header-contents3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.header-contents1 img,
+.header-contents2 img,
+.header-contents3 img {
+	width: 100%;
+	height: auto;
+}
+
+.text-container1,
+.text-container2,
+.text-container3 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+	z-index: 1;
+}
+
+.text-container1 h2,
+.text-container2 h2,
+.text-container3 h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.text-container2 h3,
+.text-container3 h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0;
+	margin-top: 0.5rem;
+}
+
+.text-container1 p,
+.text-container2 p,
+.text-container3 p {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	max-width: 80%;
+}

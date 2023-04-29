@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>담아 - 장바구니</title>
+  <link rel="stylesheet" href="../../assets/styles/global.css">
+  <link rel="stylesheet" href="shopping-cart.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+  <!-- flacticon styles load all -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css' />
+  <script src="./shopping-cart.js" type="module" defer></script>
+</head>
+
+<body>
+  <header>
+    <!-- navbar template로 삽입 -->
+  </header>
+  <div class="wrap cf"> <!-- cf = clearfix -->
+    <h1 class="projTitle">장 바 구 니</h1>
+    <div class="heading cf">
+      <h2>구매 정보</h2>
+      <a href="../list/list.html?c=MUG" class="continue">계속 쇼핑</a>
+      <a href="#" class="removeall">장바구니 비우기</a>
+    </div>
+    <div class="cart">
+      <ul class="cartWrap">
+        
+      </ul>
+    </div>
+
+    <div class="subtotal cf">
+      <ul>
+        <li class="totalRow"><span class="label">선택상품 금액</span><span class="selected-all-value">0 원</span></li>
+        <li class="totalRow"><span class="label">배송비</span><span class="shipping-fee">4,000 원</span></li>
+        <li class="totalRow final"><span class="label">주문금액</span><span class="total-value">0 원</span></li>
+        <li class="totalRow"><a href="#" class="btn order">주문하기</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <!-- footer template로 삽입 -->
+  </footer>
+</body>
+
+</html>
