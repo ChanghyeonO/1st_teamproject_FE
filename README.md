@@ -1,6 +1,3 @@
-깃랩 마스터브랜치용 첫 업로드
-깃랩 추가 브랜치 생성
-
 ![메인이미지](/src//assets/img/DAMAH-logo.PNG)
 
 ### 💻 Rescue Team Project
